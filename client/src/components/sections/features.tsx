@@ -57,7 +57,7 @@ export function Features() {
               <span className="text-primary">for Bali Properties</span>
             </h2>
             <p className="text-slate-600 text-lg mb-10 leading-relaxed">
-              From routine maintenance to emergency repairs, Bali Pool Pros provides comprehensive pool services 
+              From routine <a href="https://aquapurebali.com/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-medium">maintenance</a> to emergency repairs, Bali Pool Pros provides comprehensive <a href="https://balipoolservice.com/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-medium">pool services</a> 
               designed for the unique challenges of tropical pool ownership. Our expert team keeps your pool pristine, 
               safe, and ready for use year-round.
             </p>
