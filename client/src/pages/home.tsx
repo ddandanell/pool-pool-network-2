@@ -7,8 +7,37 @@ import { FAQ } from "@/components/sections/faq";
 import waterTexture from "@assets/generated_images/crystal_clear_water_texture.png";
 import { Link } from "wouter";
 import { Helmet } from "@/components/seo/helmet";
+import { JsonLd } from "@/components/seo/json-ld";
 
 export default function Home() {
+  const poolCleaningBaliSchema = {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Pool Cleaning Bali",
+    "description": "Professional pool cleaning and villa pool maintenance services in Bali, Indonesia. Serving Canggu, Seminyak, Ubud, Sanur and all Bali areas.",
+    "url": "https://poolcleaningbali.online",
+    "telephone": "+62-XXX-XXXX-XXXX",
+    "email": "info@poolcleaningbali.online",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Bali",
+      "addressCountry": "ID"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "-8.4095",
+      "longitude": "115.1889"
+    },
+    "areaServed": ["Canggu", "Seminyak", "Ubud", "Sanur", "Kuta", "Denpasar"],
+    "serviceType": ["Pool Cleaning", "Villa Pool Maintenance", "Emergency Pool Cleaning", "Hotel Pool Cleaning", "Swimming Pool Service"],
+    "priceRange": "$$",
+    "openingHours": "Mo-Su 07:00-19:00",
+    "sameAs": [
+      "https://facebook.com/poolcleaningbali",
+      "https://instagram.com/poolcleaningbali"
+    ]
+  };
+
   return (
     <>
       <Helmet 
@@ -17,6 +46,7 @@ export default function Home() {
         keywords="pool service Bali, pool maintenance Bali, pool cleaning Bali, pool repair Bali, swimming pool installation Bali, Bali pool experts"
         canonical="/"
       />
+      <JsonLd data={poolCleaningBaliSchema} />
       <div className="min-h-screen font-sans bg-background text-foreground overflow-x-hidden selection:bg-primary/30">
         <Navbar />
         
