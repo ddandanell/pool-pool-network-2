@@ -7,7 +7,8 @@ interface JsonLdProps {
 export function JsonLd({ data }: JsonLdProps) {
   useEffect(() => {
     // Create a unique ID for this schema
-    const schemaId = `json-ld-${JSON.stringify(data["@type"]).replace(/"/g, "")}`;
+    const schemaType = data["@type"] || "schema";
+    const schemaId = `json-ld-${schemaType}`;
     
     // Check if this schema already exists
     let script = document.getElementById(schemaId) as HTMLScriptElement;
