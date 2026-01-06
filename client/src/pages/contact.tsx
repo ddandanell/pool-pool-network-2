@@ -173,7 +173,7 @@ export default function Contact() {
                             value={formData.phone}
                             onChange={handleInputChange}
                             className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-colors"
-                            placeholder="+62 xxx xxxx xxxx"
+                            placeholder="+62 822-3756-5997"
                           />
                         </div>
                         <div>
