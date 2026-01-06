@@ -19,7 +19,7 @@ Requirements:
 - Internal links: Add helpful links to relevant on-site resources (service pages, guides). Use descriptive anchor text that matches the destination content.
 - External links: Where genuinely helpful, cite authoritative sources (e.g., Bali water standards, equipment manufacturers). If mentioning partners, link only where contextually relevant and clearly beneficial to readers; avoid excessive repetition.
 - Local value: Include practical steps for Bali conditions—rainy season prep, mineral content considerations, eco-friendly treatments, and safety tips.
-- Trust elements: Add an author byline, last-reviewed date, contact CTA, FAQ, and a brief credentials/experience note.
+- Trust elements: Add an author byline, last-reviewed date, contact CTA, FAQ, and a brief credentials/experience note (e.g., certifications, licenses, or years of Bali service).
 - Performance: Keep HTML lightweight; prioritize fast load (no large inline scripts), mobile-friendly layout, and clear meta title/description suggestions.
 - Schema: Provide a JSON-LD example for Article or LocalBusiness with accurate name, URL, areaServed, serviceType, and contact info placeholders.
 ```
@@ -34,7 +34,7 @@ Requirements:
 ## Measurement & Safety Checks
 
 - Track: impressions, clicks, conversions, scroll depth, and time on page via privacy-respecting analytics.
-- Monitor Core Web Vitals (LCP, CLS, INP) and fix regressions quickly.
+- Monitor Core Web Vitals—Largest Contentful Paint (LCP), Cumulative Layout Shift (CLS), and Interaction to Next Paint (INP)—and fix regressions quickly.
 - Review content quarterly for accuracy, freshness, and policy compliance; remove or revise any sections that could be construed as manipulative.
 
 ## How This Remains White-Hat
