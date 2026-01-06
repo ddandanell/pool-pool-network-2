@@ -63,7 +63,7 @@ export default function Contact() {
       <Helmet 
         title="Contact Us | Pool Service Bali | Get Free Quote | Bali Pool Pros"
         description="Contact Bali Pool Pros for professional pool services in Bali. Get a free quote for pool maintenance, cleaning, repair, or installation. Call +62 822-3756-5997 or fill out our contact form."
-        keywords="contact pool service Bali, pool maintenance quote Bali, pool repair Bali contact, swimming pool company Bali"
+        keywords="contact pool service Bali, pool maintenance quote Bali, pool repair Bali contact, swimming pool company Bali, aquapure bali, bali pool service"
         canonical="/contact"
       />
       <div className="min-h-screen font-sans bg-background text-foreground overflow-x-hidden selection:bg-primary/30">

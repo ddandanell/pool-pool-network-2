@@ -106,10 +106,10 @@ export default function About() {
                   </h2>
                   <div className="space-y-6 text-slate-600 text-lg leading-relaxed">
                     <p>
-                      Bali Pool Pros was founded in 2010 by a group of local Balinese experts and expatriate engineers who saw a need for reliable, professional pool services in Bali. Starting as a small maintenance team serving luxury villas in Ubud, we quickly earned a reputation for excellence and attention to detail.
+                      Bali Pool Pros was founded in 2010 by a group of local Balinese experts and expatriate engineers who saw a need for reliable, professional <a href="https://balipoolservice.com/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-medium">pool services</a> in Bali. Starting as a small maintenance team serving luxury villas in Ubud, we quickly earned a reputation for excellence and attention to detail.
                     </p>
                     <p>
-                      Our founders understood that maintaining pools in Bali's tropical climate presented unique challenges that required specialized knowledge. The high humidity, monsoon seasons, intense sun exposure, and mineral-rich water demanded expertise beyond standard pool maintenance practices.
+                      Our founders understood that maintaining pools in Bali's tropical climate presented unique challenges that required specialized knowledge. The high humidity, monsoon seasons, intense sun exposure, and mineral-rich water demanded expertise beyond standard <a href="https://aquapurebali.com/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-medium">pool maintenance</a> practices.
                     </p>
                     <p>
                       Over the years, we've grown to become Bali's leading pool service provider, handling over 500 properties annually. Our commitment to sustainable practices, eco-friendly products, and exceptional customer service has made us the trusted choice for villa owners, resort managers, and homeowners throughout the island.

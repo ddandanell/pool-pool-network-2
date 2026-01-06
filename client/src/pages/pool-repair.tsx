@@ -92,7 +92,7 @@ export default function PoolRepair() {
       <Helmet 
         title="Pool Repair Bali | Expert Pool Pump, Leak & Equipment Repair | Bali Pool Pros"
         description="Professional pool repair services in Bali. Fast pump repairs, leak detection, equipment fixes, and emergency pool services. 24/7 availability for Bali villas and resorts."
-        keywords="pool repair Bali, pool pump repair Bali, pool leak repair, pool equipment repair, swimming pool fix Bali, emergency pool repair"
+        keywords="pool repair Bali, pool pump repair Bali, pool leak repair, pool equipment repair, swimming pool fix Bali, emergency pool repair, aquapure bali, bali pool service"
         canonical="/pool-repair"
       />
       <div className="min-h-screen font-sans bg-background text-foreground overflow-x-hidden selection:bg-primary/30">
@@ -160,10 +160,10 @@ export default function PoolRepair() {
                   </h2>
                   <div className="space-y-6 text-slate-600 text-lg leading-relaxed">
                     <p>
-                      Pool equipment failures and structural issues don't follow a schedule. When problems arise, you need a repair team that responds quickly, diagnoses accurately, and fixes things right the first time. Bali Pool Pros has been repairing pools across Bali since 2010, and we've seen every type of issue the tropical climate can cause.
+                      Pool equipment failures and structural issues don't follow a schedule. When problems arise, you need a <a href="https://balipoolservice.com/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-medium">repair team</a> that responds quickly, diagnoses accurately, and fixes things right the first time. Bali Pool Pros has been repairing pools across Bali since 2010, and we've seen every type of issue the tropical climate can cause.
                     </p>
                     <p>
-                      Our technicians are trained on all major pool equipment brands and carry common replacement parts to ensure many repairs can be completed during the first visit. For more complex issues, we provide clear timelines and fair, transparent pricing before any work begins.
+                      Our technicians are trained on all major pool equipment brands and carry common replacement parts to ensure many <a href="https://aquapurebali.com/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-medium">repairs</a> can be completed during the first visit. For more complex issues, we provide clear timelines and fair, transparent pricing before any work begins.
                     </p>
                     <p>
                       We understand that a broken pool isn't just an inconvenience—it can impact your rental income, guest satisfaction, and property value. That's why we prioritize speed without sacrificing quality. Our goal is to get your pool back in perfect condition as quickly as possible.

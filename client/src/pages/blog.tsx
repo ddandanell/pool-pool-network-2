@@ -151,7 +151,7 @@ export default function Blog() {
       <Helmet 
         title="Pool Service Blog | Pool Maintenance Tips & Advice for Bali | Bali Pool Pros"
         description="Expert advice on pool maintenance, cleaning, and care for Bali properties. Tips for tropical pool care, equipment maintenance, and solving common pool problems in Bali's climate."
-        keywords="pool maintenance tips Bali, pool care blog, swimming pool advice, tropical pool maintenance, Bali pool tips"
+        keywords="pool maintenance tips Bali, pool care blog, swimming pool advice, tropical pool maintenance, Bali pool tips, aquapure bali, bali pool service"
         canonical="/blog"
       />
       <div className="min-h-screen font-sans bg-background text-foreground overflow-x-hidden selection:bg-primary/30">

@@ -16,7 +16,7 @@ export default function Home() {
     "name": "Pool Cleaning Bali",
     "description": "Professional pool cleaning and villa pool maintenance services in Bali, Indonesia. Serving Canggu, Seminyak, Ubud, Sanur and all Bali areas.",
     "url": "https://poolcleaningbali.online",
-    "telephone": "+62-XXX-XXXX-XXXX",
+    "telephone": "+62-822-3756-5997",
     "email": "info@poolcleaningbali.online",
     "address": {
       "@type": "PostalAddress",
@@ -43,7 +43,7 @@ export default function Home() {
       <Helmet 
         title="Pool Service in Bali | Expert Pool Maintenance, Cleaning & Repair | Bali Pool Pros"
         description="Bali's leading pool service company. Professional pool maintenance, cleaning, repair, and installation for villas, resorts, and residences. Expert pool care in Bali's tropical climate."
-        keywords="pool service Bali, pool maintenance Bali, pool cleaning Bali, pool repair Bali, swimming pool installation Bali, Bali pool experts"
+        keywords="pool service Bali, pool maintenance Bali, pool cleaning Bali, pool repair Bali, swimming pool installation Bali, Bali pool experts, aquapure bali, bali pool service"
         canonical="/"
       />
       <JsonLd data={poolCleaningBaliSchema} />
@@ -80,10 +80,10 @@ export default function Home() {
                     Bali's Leading <span className="text-primary">Pool Service Experts</span> Since 2010
                   </h2>
                   <p className="text-slate-600 text-lg leading-relaxed mb-6">
-                    Founded in 2010 by a team of local Balinese experts and international engineers, Bali Pool Pros began as a small maintenance crew serving luxury villas in Ubud. Today, we're Bali's most trusted pool service company, handling over 500 properties annually with a commitment to sustainable practices and exceptional customer service.
+                    Founded in 2010 by a team of local Balinese experts and international engineers, Bali Pool Pros began as a small maintenance crew serving luxury villas in Ubud. Today, we're Bali's most trusted <a href="https://balipoolservice.com/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-medium">pool service</a> company, handling over 500 properties annually with a commitment to sustainable practices and exceptional customer service.
                   </p>
                   <p className="text-slate-600 text-lg leading-relaxed mb-8">
-                    Our team understands the unique challenges of maintaining pools in Bali's tropical climate—from monsoon season algae prevention to equipment protection against humidity and salt air. We combine traditional expertise with modern technology to deliver pool maintenance, cleaning, repair, and installation services that exceed expectations.
+                    Our team understands the unique challenges of maintaining pools in Bali's tropical climate—from monsoon season algae prevention to equipment protection against humidity and salt air. We combine traditional expertise with modern technology to deliver <a href="https://aquapurebali.com/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-medium">pool maintenance</a>, cleaning, repair, and installation services that exceed expectations.
                   </p>
                   <Link href="/about" className="inline-flex items-center gap-2 text-primary font-semibold hover:underline">
                     Learn More About Our Story
