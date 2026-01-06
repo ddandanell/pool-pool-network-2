@@ -16,7 +16,7 @@ export default function Home() {
     "name": "Pool Cleaning Bali",
     "description": "Professional pool cleaning and villa pool maintenance services in Bali, Indonesia. Serving Canggu, Seminyak, Ubud, Sanur and all Bali areas.",
     "url": "https://poolcleaningbali.online",
-    "telephone": "+62-XXX-XXXX-XXXX",
+    "telephone": "+62 822-3756-5997",
     "email": "info@poolcleaningbali.online",
     "address": {
       "@type": "PostalAddress",
@@ -30,7 +30,6 @@ export default function Home() {
     },
     "areaServed": ["Canggu", "Seminyak", "Ubud", "Sanur", "Kuta", "Denpasar"],
     "serviceType": ["Pool Cleaning", "Villa Pool Maintenance", "Emergency Pool Cleaning", "Hotel Pool Cleaning", "Swimming Pool Service"],
-    "priceRange": "$$",
     "openingHours": "Mo-Su 07:00-19:00",
     "sameAs": [
       "https://facebook.com/poolcleaningbali",
