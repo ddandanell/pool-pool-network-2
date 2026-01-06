@@ -21,7 +21,7 @@ const services = [
     title: "Pool Cleaning Bali",
     description: "Professional deep cleaning services for pools of all sizes. From routine cleaning to intensive algae removal, we restore pools to pristine condition.",
     features: ["Surface skimming", "Vacuum cleaning", "Wall & floor brushing", "Drain & refill services", "Green pool recovery"],
-    link: "/services"
+    link: "/pool-maintenance"
   },
   {
     icon: Wrench,
@@ -42,7 +42,7 @@ const services = [
     title: "Pool Equipment Services",
     description: "Installation, maintenance, and repair of all pool equipment. From pumps to heating systems, we keep your pool technology running smoothly.",
     features: ["Pump installation & service", "Filtration system upgrades", "Salt chlorinator systems", "Pool heating solutions", "Automated pool controls"],
-    link: "/services"
+    link: "/pool-repair"
   },
   {
     icon: Clock,

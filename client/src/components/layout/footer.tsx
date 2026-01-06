@@ -46,10 +46,14 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <a href="#" className="hover:text-primary transition-colors">Pool Cleaning Bali</a>
+                <Link href="/pool-maintenance" className="hover:text-primary transition-colors">
+                  Pool Cleaning Bali
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:text-primary transition-colors">Water Analysis</a>
+                <Link href="/contact" className="hover:text-primary transition-colors">
+                  Water Analysis
+                </Link>
               </li>
             </ul>
           </div>
