@@ -8,7 +8,7 @@ export default function NotFound() {
       <Helmet 
         title="Page Not Found | Bali Pool Pros"
         description="The page you are looking for isn't available. Return to Bali Pool Pros for pool maintenance, repair, installation, and cleaning services in Bali."
-        canonical="/not-found"
+        canonical="/"
       />
       <div className="min-h-screen w-full flex items-center justify-center bg-gray-50">
         <Card className="w-full max-w-md mx-4">
