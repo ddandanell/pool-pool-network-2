@@ -92,7 +92,7 @@ export default function PoolInstallation() {
       <Helmet 
         title="Swimming Pool Installation Bali | Custom Pool Construction | Bali Pool Pros"
         description="Expert swimming pool installation and construction in Bali. Custom infinity pools, plunge pools, and lap pools for villas and resorts. Professional pool builders with 14+ years experience."
-        keywords="pool installation Bali, swimming pool construction Bali, pool builder Bali, infinity pool Bali, custom pool design, pool contractors Bali"
+        keywords="pool installation Bali, swimming pool construction Bali, pool builder Bali, infinity pool Bali, custom pool design, pool contractors Bali, aquapure bali, bali pool service"
         canonical="/pool-installation"
       />
       <div className="min-h-screen font-sans bg-background text-foreground overflow-x-hidden selection:bg-primary/30">
@@ -145,10 +145,10 @@ export default function PoolInstallation() {
                       A swimming pool is the centerpiece of any Bali property. Whether you're developing a luxury villa, upgrading a family home, or creating a resort experience, the right pool design transforms your space and enhances its value. At Bali Pool Pros, we've been designing and building exceptional pools across Bali for over 14 years.
                     </p>
                     <p>
-                      Our pool installation team combines international engineering standards with deep knowledge of local conditions. We understand Bali's unique challenges—from volcanic soil composition to monsoon drainage requirements, from salt air corrosion near coastal areas to the high water tables in some regions. This expertise ensures your pool is not only beautiful but built to last.
+                      Our <a href="https://balipoolservice.com/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-medium">pool installation</a> team combines international engineering standards with deep knowledge of local conditions. We understand Bali's unique challenges—from volcanic soil composition to monsoon drainage requirements, from salt air corrosion near coastal areas to the high water tables in some regions. This expertise ensures your pool is not only beautiful but built to last.
                     </p>
                     <p>
-                      Every pool we build is custom-designed to complement your property's architecture, maximize your views, and suit your lifestyle. From the initial concept to final handover, our team guides you through the process with clear communication, transparent pricing, and meticulous attention to quality.
+                      Every pool we build is custom-designed to complement your property's architecture, maximize your views, and suit your lifestyle. From the initial concept to final handover, our team guides you through the <a href="https://aquapurebali.com/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-medium">process</a> with clear communication, transparent pricing, and meticulous attention to quality.
                     </p>
                   </div>
                 </div>

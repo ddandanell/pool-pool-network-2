@@ -20,11 +20,19 @@ const faqItems = [
   },
   {
     question: "What does your pool cleaning service in Bali include?",
-    answer: "Our comprehensive pool cleaning service in Bali includes skimming and removing surface debris, vacuuming the pool floor and walls, brushing tiles and waterline, cleaning skimmer and pump baskets, backwashing filters, testing and balancing water chemistry, inspecting equipment, and providing a detailed service report with before/after photos."
+    answer: () => (
+      <>
+        Our comprehensive pool cleaning service in Bali includes skimming and removing surface debris, vacuuming the pool floor and walls, brushing tiles and waterline, cleaning skimmer and pump baskets, backwashing filters, testing and balancing water chemistry, inspecting equipment, and providing a detailed service report with before/after photos. Learn more at <a href="https://aquapurebali.com/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-medium">aquapurebali.com</a>.
+      </>
+    )
   },
   {
     question: "How do you handle pool repair emergencies in Bali?",
-    answer: "We offer 24/7 emergency pool repair services across Bali. Common emergencies we handle include pump failures, leaks, filter malfunctions, and green pool recovery. Our technicians carry essential parts and can respond within 2-4 hours for urgent issues. Contact us via WhatsApp for immediate assistance with any pool repair needs."
+    answer: () => (
+      <>
+        We offer 24/7 emergency pool repair services across Bali. Common emergencies we handle include pump failures, leaks, filter malfunctions, and green pool recovery. Our technicians carry essential parts and can respond within 2-4 hours for urgent issues. Contact us via WhatsApp for immediate assistance with any <a href="https://balipoolservice.com/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-medium">pool repair needs</a>.
+      </>
+    )
   },
   {
     question: "What eco-friendly pool maintenance options do you offer?",
@@ -81,7 +89,7 @@ export function FAQ({ className = "" }: FAQProps) {
                   {item.question}
                 </AccordionTrigger>
                 <AccordionContent className="text-slate-600 leading-relaxed pb-6">
-                  {item.answer}
+                  {typeof item.answer === 'function' ? item.answer() : item.answer}
                 </AccordionContent>
               </AccordionItem>
             ))}

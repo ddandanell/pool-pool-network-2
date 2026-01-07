@@ -66,7 +66,7 @@ export default function PoolMaintenance() {
       <Helmet 
         title="Pool Maintenance Bali | Professional Weekly Pool Care Services | Bali Pool Pros"
         description="Expert pool maintenance services in Bali. Weekly and bi-weekly pool care for villas, resorts, and homes. Chemical balancing, cleaning, and equipment checks in Bali's tropical climate."
-        keywords="pool maintenance Bali, weekly pool service Bali, pool care Bali, swimming pool maintenance, villa pool maintenance Bali, resort pool service"
+        keywords="pool maintenance Bali, weekly pool service Bali, pool care Bali, swimming pool maintenance, villa pool maintenance Bali, resort pool service, aquapure bali, bali pool service"
         canonical="/pool-maintenance"
       />
       <div className="min-h-screen font-sans bg-background text-foreground overflow-x-hidden selection:bg-primary/30">
@@ -112,10 +112,10 @@ export default function PoolMaintenance() {
                       Pool maintenance in Bali requires specialized knowledge and consistent attention. The island's tropical climate creates unique challenges that can quickly turn a pristine pool into a green swamp if not properly managed. High humidity accelerates algae growth, monsoon rains dilute chemicals and introduce contaminants, while intense tropical sun promotes bacterial development.
                     </p>
                     <p>
-                      At Bali Pool Pros, we've developed maintenance protocols specifically for Bali's conditions. Our experienced technicians understand how local water quality, seasonal changes, and environmental factors affect your pool's chemistry and appearance. We don't just maintain pools – we keep them in guest-ready condition year-round.
+                      At Bali Pool Pros, we've developed <a href="https://aquapurebali.com/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-medium">maintenance protocols</a> specifically for Bali's conditions. Our experienced technicians understand how local water quality, seasonal changes, and environmental factors affect your pool's chemistry and appearance. We don't just maintain pools – we keep them in guest-ready condition year-round.
                     </p>
                     <p>
-                      Regular pool maintenance protects your investment, ensures swimmer safety, and eliminates the stress of pool ownership. Whether you have a private residence, vacation villa, or commercial resort, our maintenance programs are designed to meet your specific needs and budget.
+                      Regular <a href="https://balipoolservice.com/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-medium">pool maintenance</a> protects your investment, ensures swimmer safety, and eliminates the stress of pool ownership. Whether you have a private residence, vacation villa, or commercial resort, our maintenance programs are designed to meet your specific needs and budget.
                     </p>
                   </div>
                 </div>

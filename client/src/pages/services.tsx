@@ -59,7 +59,7 @@ export default function Services() {
       <Helmet 
         title="Pool Services in Bali | Maintenance, Cleaning, Repair & Installation | Bali Pool Pros"
         description="Complete pool services in Bali including maintenance, cleaning, repair, and installation. Professional pool care for villas, resorts, and residential properties. Get a free quote today."
-        keywords="pool services Bali, pool maintenance Bali, pool cleaning Bali, pool repair Bali, swimming pool installation Bali, Bali pool company"
+        keywords="pool services Bali, pool maintenance Bali, pool cleaning Bali, pool repair Bali, swimming pool installation Bali, Bali pool company, aquapure bali, bali pool service"
         canonical="/services"
       />
       <div className="min-h-screen font-sans bg-background text-foreground overflow-x-hidden selection:bg-primary/30">
@@ -98,8 +98,8 @@ export default function Services() {
                 <span className="text-primary font-semibold uppercase tracking-wider text-sm mb-2 block">What We Offer</span>
                 <h2 className="text-4xl font-heading font-bold text-slate-900 mb-6">Professional Pool Services for Bali Properties</h2>
                 <p className="text-slate-600 text-lg">
-                  Whether you own a luxury villa, manage a resort, or have a residential property in Bali, our comprehensive pool services ensure your pool remains a source of enjoyment rather than worry. 
-                  We understand the specific challenges of pool care in Bali's tropical climate and have developed solutions that work.
+                  Whether you own a luxury villa, manage a resort, or have a residential property in Bali, our comprehensive <a href="https://balipoolservice.com/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-medium">pool services</a> ensure your pool remains a source of enjoyment rather than worry. 
+                  We understand the specific challenges of <a href="https://aquapurebali.com/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-medium">pool care</a> in Bali's tropical climate and have developed solutions that work.
                 </p>
               </div>
 
