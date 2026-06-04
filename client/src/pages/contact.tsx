@@ -62,7 +62,7 @@ export default function Contact() {
     <>
       <Helmet 
         title="Contact Us | Pool Service Bali | Get Free Quote | Bali Pool Pros"
-        description="Contact Bali Pool Pros for professional pool services in Bali. Get a free quote for pool maintenance, cleaning, repair, or installation. Call +62 822-3756-5997 or fill out our contact form."
+        description="Contact Bali Pool Pros for professional pool services in Bali. Get a free quote for pool maintenance, cleaning, repair, or installation. Call +62 823-2301-1656 or fill out our contact form."
         keywords="contact pool service Bali, pool maintenance quote Bali, pool repair Bali contact, swimming pool company Bali"
         canonical="/contact"
       />
@@ -268,8 +268,8 @@ export default function Contact() {
                       </div>
                       <div>
                         <h3 className="font-heading font-bold text-lg mb-1">Phone</h3>
-                        <a href="tel:+62 822-3756-5997" className="text-primary hover:underline font-medium text-lg">
-                          +62 822-3756-5997
+                        <a href="tel:+62 823-2301-1656" className="text-primary hover:underline font-medium text-lg">
+                          +62 823-2301-1656
                         </a>
                         <p className="text-slate-500 text-sm mt-1">Available 24/7 for emergencies</p>
                       </div>
@@ -282,7 +282,7 @@ export default function Contact() {
                       <div>
                         <h3 className="font-heading font-bold text-lg mb-1">WhatsApp</h3>
                         <a 
-                          href="https://wa.me/6282237565997" 
+                          href="https://wa.me/6282323011656" 
                           target="_blank" 
                           rel="noopener noreferrer"
                           className="text-primary hover:underline font-medium text-lg"
@@ -399,14 +399,14 @@ export default function Contact() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a 
-                  href="tel:+62 822-3756-5997" 
+                  href="tel:+62 823-2301-1656" 
                   className="inline-flex items-center justify-center bg-white text-primary font-bold px-8 py-4 rounded-xl hover:bg-slate-100 transition-colors text-lg"
                 >
                   <Phone className="w-6 h-6 mr-2" aria-hidden="true" />
-                  +62 822-3756-5997
+                  +62 823-2301-1656
                 </a>
                 <a 
-                  href="https://wa.me/6282237565997" 
+                  href="https://wa.me/6282323011656" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center bg-green-500 text-white font-bold px-8 py-4 rounded-xl hover:bg-green-600 transition-colors text-lg"

@@ -16,7 +16,7 @@ export default function Home() {
     "name": "Pool Cleaning Bali",
     "description": "Professional pool cleaning and villa pool maintenance services in Bali, Indonesia. Serving Canggu, Seminyak, Ubud, Sanur and all Bali areas.",
     "url": "https://poolcleaningbali.online",
-    "telephone": "+62 822-3756-5997",
+    "telephone": "+62 823-2301-1656",
     "email": "info@ecopoolbali.com",
     "address": {
       "@type": "PostalAddress",

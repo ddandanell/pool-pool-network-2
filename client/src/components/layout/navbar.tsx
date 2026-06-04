@@ -158,7 +158,7 @@ export function Navbar() {
               </Button>
             </Link>
             <p className="text-center text-slate-500 text-sm mt-4">
-              Call us: +62 822-3756-5997
+              Call us: +62 823-2301-1656
             </p>
           </div>
         </div>

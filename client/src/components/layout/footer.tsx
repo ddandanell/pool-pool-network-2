@@ -100,7 +100,7 @@ export function Footer() {
                 </li>
                 <li className="flex items-center gap-3">
                   <Phone className="w-4 h-4 text-primary flex-shrink-0" aria-hidden="true" />
-                  <a href="tel:+62 822-3756-5997" className="hover:text-primary transition-colors">+62 822-3756-5997</a>
+                  <a href="tel:+62 823-2301-1656" className="hover:text-primary transition-colors">+62 823-2301-1656</a>
                 </li>
                 <li className="flex items-center gap-3">
                   <Mail className="w-4 h-4 text-primary flex-shrink-0" aria-hidden="true" />
@@ -110,7 +110,7 @@ export function Footer() {
             </address>
             <div className="flex gap-4 mt-6">
               <a 
-                href="https://wa.me/6282237565997" 
+                href="https://wa.me/6282323011656" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-primary transition-colors"
