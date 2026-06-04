@@ -100,11 +100,11 @@ export function Footer() {
                 </li>
                 <li className="flex items-center gap-3">
                   <Phone className="w-4 h-4 text-primary flex-shrink-0" aria-hidden="true" />
-                  <a href="tel:+6282237565997" className="hover:text-primary transition-colors">+62 822-3756-5997</a>
+                  <a href="tel:+62 822-3756-5997" className="hover:text-primary transition-colors">+62 822-3756-5997</a>
                 </li>
                 <li className="flex items-center gap-3">
                   <Mail className="w-4 h-4 text-primary flex-shrink-0" aria-hidden="true" />
-                  <a href="mailto:hello@balipoolpros.com" className="hover:text-primary transition-colors">hello@balipoolpros.com</a>
+                  <a href="mailto:info@ecopoolbali.com" className="hover:text-primary transition-colors">info@ecopoolbali.com</a>
                 </li>
               </ul>
             </address>

@@ -262,7 +262,7 @@ export default function Services() {
                   </a>
                 </Link>
                 <a 
-                  href="tel:+6282237565997" 
+                  href="tel:+62 822-3756-5997" 
                   className="inline-flex items-center justify-center border-2 border-white text-white font-bold px-8 py-4 rounded-xl hover:bg-white/10 transition-colors"
                 >
                   Call +62 822-3756-5997

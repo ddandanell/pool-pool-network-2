@@ -126,7 +126,7 @@ export default function PoolRepair() {
                     </a>
                   </Link>
                   <a 
-                    href="tel:+6282237565997" 
+                    href="tel:+62 822-3756-5997" 
                     className="inline-flex items-center justify-center border-2 border-white text-white font-bold px-8 py-4 rounded-xl hover:bg-white/10 transition-colors"
                   >
                     <Phone className="w-5 h-5 mr-2" aria-hidden="true" />
@@ -144,7 +144,7 @@ export default function PoolRepair() {
                 <AlertTriangle className="w-6 h-6" aria-hidden="true" />
                 <span className="font-bold text-lg">24/7 Emergency Pool Repair Available</span>
                 <span className="opacity-75">|</span>
-                <span>Call us anytime for urgent pool issues: <a href="tel:+6282237565997" className="underline font-bold">+62 822-3756-5997</a></span>
+                <span>Call us anytime for urgent pool issues: <a href="tel:+62 822-3756-5997" className="underline font-bold">+62 822-3756-5997</a></span>
               </div>
             </div>
           </section>
@@ -357,7 +357,7 @@ export default function PoolRepair() {
                   </a>
                 </Link>
                 <a 
-                  href="tel:+6282237565997" 
+                  href="tel:+62 822-3756-5997" 
                   className="inline-flex items-center justify-center border-2 border-white text-white font-bold px-8 py-4 rounded-xl hover:bg-white/10 transition-colors"
                 >
                   <Phone className="w-5 h-5 mr-2" aria-hidden="true" />

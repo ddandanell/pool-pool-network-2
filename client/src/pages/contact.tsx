@@ -268,7 +268,7 @@ export default function Contact() {
                       </div>
                       <div>
                         <h3 className="font-heading font-bold text-lg mb-1">Phone</h3>
-                        <a href="tel:+6282237565997" className="text-primary hover:underline font-medium text-lg">
+                        <a href="tel:+62 822-3756-5997" className="text-primary hover:underline font-medium text-lg">
                           +62 822-3756-5997
                         </a>
                         <p className="text-slate-500 text-sm mt-1">Available 24/7 for emergencies</p>
@@ -299,8 +299,8 @@ export default function Contact() {
                       </div>
                       <div>
                         <h3 className="font-heading font-bold text-lg mb-1">Email</h3>
-                        <a href="mailto:hello@balipoolpros.com" className="text-primary hover:underline font-medium text-lg">
-                          hello@balipoolpros.com
+                        <a href="mailto:info@ecopoolbali.com" className="text-primary hover:underline font-medium text-lg">
+                          info@ecopoolbali.com
                         </a>
                         <p className="text-slate-500 text-sm mt-1">We respond within 24 hours</p>
                       </div>
@@ -399,7 +399,7 @@ export default function Contact() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a 
-                  href="tel:+6282237565997" 
+                  href="tel:+62 822-3756-5997" 
                   className="inline-flex items-center justify-center bg-white text-primary font-bold px-8 py-4 rounded-xl hover:bg-slate-100 transition-colors text-lg"
                 >
                   <Phone className="w-6 h-6 mr-2" aria-hidden="true" />
