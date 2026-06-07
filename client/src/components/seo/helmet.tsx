@@ -69,7 +69,7 @@ export function Helmet({ title, description, keywords, canonical, ogImage }: Hel
     // Update canonical
     if (canonical) {
       let canonicalLink = document.querySelector('link[rel="canonical"]');
-      const fullCanonical = canonical.startsWith("http") ? canonical : `https://balipoolpros.com${canonical}`;
+      const fullCanonical = canonical.startsWith("http") ? canonical : `https://balipoolcleaning.online${canonical}`;
       if (canonicalLink) {
         canonicalLink.setAttribute("href", fullCanonical);
       } else {
