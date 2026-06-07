@@ -299,8 +299,8 @@ export default function Contact() {
                       </div>
                       <div>
                         <h3 className="font-heading font-bold text-lg mb-1">Email</h3>
-                        <a href="mailto:info@ecopoolbali.com" className="text-primary hover:underline font-medium text-lg">
-                          info@ecopoolbali.com
+                        <a href="mailto:info@balipoolservice.com" className="text-primary hover:underline font-medium text-lg">
+                          info@balipoolservice.com
                         </a>
                         <p className="text-slate-500 text-sm mt-1">We respond within 24 hours</p>
                       </div>

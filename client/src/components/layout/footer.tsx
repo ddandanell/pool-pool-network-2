@@ -104,7 +104,7 @@ export function Footer() {
                 </li>
                 <li className="flex items-center gap-3">
                   <Mail className="w-4 h-4 text-primary flex-shrink-0" aria-hidden="true" />
-                  <a href="mailto:info@ecopoolbali.com" className="hover:text-primary transition-colors">info@ecopoolbali.com</a>
+                  <a href="mailto:info@balipoolservice.com" className="hover:text-primary transition-colors">info@balipoolservice.com</a>
                 </li>
               </ul>
             </address>
