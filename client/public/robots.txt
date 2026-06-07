@@ -1,11 +1,11 @@
 # Robots.txt for Bali Pool Pros
-# https://balipoolcleaning.online
+# https://poolcleaningbali.online
 
 User-agent: *
 Allow: /
 
 # Sitemap location
-Sitemap: https://balipoolcleaning.online/sitemap.xml
+Sitemap: https://poolcleaningbali.online/sitemap.xml
 
 # Disallow admin and API routes
 Disallow: /api/
