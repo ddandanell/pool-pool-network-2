@@ -2,6 +2,7 @@ import { Navbar } from "@/components/layout/navbar";
 import { Footer } from "@/components/layout/footer";
 import { FAQ } from "@/components/sections/faq";
 import { Helmet } from "@/components/seo/helmet";
+import { JsonLd } from "@/components/seo/json-ld";
 import heroImage from "@assets/generated_images/luxury_bali_villa_pool_hero.png";
 import { Link } from "wouter";
 import { Phone, Mail, MapPin, Clock, MessageCircle, Send, CheckCircle2 } from "lucide-react";
@@ -33,6 +34,40 @@ const areas = [
 ];
 
 export default function Contact() {
+  const contactSchema = {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Bali Pool Pros",
+    "description": "Professional pool service company in Bali offering maintenance, cleaning, repair, and installation services. Contact us for a free quote.",
+    "url": "https://balipoolcleaning.online/contact",
+    "telephone": "+62 823-2301-1656",
+    "email": "info@balipoolservice.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Jl. Raya Ubud No. 45",
+      "addressLocality": "Gianyar",
+      "addressRegion": "Bali",
+      "postalCode": "80571",
+      "addressCountry": "ID"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+        "opens": "08:00",
+        "closes": "18:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Sunday",
+        "opens": "00:00",
+        "closes": "23:59",
+        "description": "Emergency service only"
+      }
+    ],
+    "areaServed": ["Ubud", "Seminyak", "Canggu", "Kerobokan", "Uluwatu", "Jimbaran", "Nusa Dua", "Sanur", "Denpasar", "Tabanan", "Karangasem", "Singaraja", "Bali"]
+  };
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -66,6 +101,7 @@ export default function Contact() {
         keywords="contact pool service Bali, pool maintenance quote Bali, pool repair Bali contact, swimming pool company Bali"
         canonical="/contact"
       />
+      <JsonLd data={contactSchema} />
       <div className="min-h-screen font-sans bg-background text-foreground overflow-x-hidden selection:bg-primary/30">
         <Navbar />
         

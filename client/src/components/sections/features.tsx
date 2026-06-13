@@ -33,7 +33,7 @@ export function Features() {
         <div className="flex flex-col md:flex-row gap-16 items-center">
           <div className="w-full md:w-1/2">
             <div className="relative rounded-3xl overflow-hidden shadow-2xl">
-              <img 
+              <img loading="lazy" 
                 src={cleaningImage} 
                 alt="Professional pool cleaning service in Bali - technician maintaining villa pool" 
                 className="w-full aspect-[4/3] object-cover"

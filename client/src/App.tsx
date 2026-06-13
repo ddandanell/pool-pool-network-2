@@ -11,6 +11,7 @@ import PoolRepair from "@/pages/pool-repair";
 import PoolInstallation from "@/pages/pool-installation";
 import Contact from "@/pages/contact";
 import Blog from "@/pages/blog";
+import AreasServed from "@/pages/areas-served";
 import NotFound from "@/pages/not-found";
 
 function Router() {
@@ -24,6 +25,7 @@ function Router() {
       <Route path="/pool-installation" component={PoolInstallation} />
       <Route path="/contact" component={Contact} />
       <Route path="/blog" component={Blog} />
+      <Route path="/areas-served" component={AreasServed} />
       <Route component={NotFound} />
     </Switch>
   );

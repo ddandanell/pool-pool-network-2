@@ -2,6 +2,7 @@ import { Navbar } from "@/components/layout/navbar";
 import { Footer } from "@/components/layout/footer";
 import { FAQ } from "@/components/sections/faq";
 import { Helmet } from "@/components/seo/helmet";
+import { JsonLd } from "@/components/seo/json-ld";
 import heroImage from "@assets/generated_images/luxury_bali_villa_pool_hero.png";
 import waterTexture from "@assets/generated_images/crystal_clear_water_texture.png";
 import cleaningImage from "@assets/generated_images/professional_pool_cleaning_service.png";
@@ -146,6 +147,56 @@ Investing in quality maintenance pays dividends. Equipment failures are disrupti
 ];
 
 export default function Blog() {
+  const blogSchema = {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "name": "Bali Pool Pros Blog - Pool Care Tips & Advice",
+    "description": "Expert advice on pool maintenance, cleaning, and care for Bali properties. Tips for tropical pool care, equipment maintenance, and solving common pool problems.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Bali Pool Pros",
+      "url": "https://balipoolcleaning.online"
+    },
+    "blogPost": [
+      {
+        "@type": "BlogPosting",
+        "headline": "Essential Pool Maintenance Tips for Bali's Monsoon Season",
+        "datePublished": "2024-12-15",
+        "author": { "@type": "Person", "name": "I Made Putra" }
+      },
+      {
+        "@type": "BlogPosting",
+        "headline": "Understanding Pool Chemistry in Bali's Tropical Climate",
+        "datePublished": "2024-12-08",
+        "author": { "@type": "Person", "name": "James Mitchell" }
+      },
+      {
+        "@type": "BlogPosting",
+        "headline": "Green Pool Recovery: How We Rescue Algae-Infested Pools in Bali",
+        "datePublished": "2024-11-28",
+        "author": { "@type": "Person", "name": "I Gede Surya" }
+      },
+      {
+        "@type": "BlogPosting",
+        "headline": "Choosing the Right Pool for Your Bali Villa",
+        "datePublished": "2024-11-20",
+        "author": { "@type": "Person", "name": "I Ketut Dharma" }
+      },
+      {
+        "@type": "BlogPosting",
+        "headline": "Salt vs. Chlorine: Which Sanitization System Works Best in Bali?",
+        "datePublished": "2024-11-12",
+        "author": { "@type": "Person", "name": "James Mitchell" }
+      },
+      {
+        "@type": "BlogPosting",
+        "headline": "Pool Equipment Maintenance: Extending the Life of Your Investment",
+        "datePublished": "2024-11-05",
+        "author": { "@type": "Person", "name": "I Made Putra" }
+      }
+    ]
+  };
+
   return (
     <>
       <Helmet 
@@ -154,6 +205,7 @@ export default function Blog() {
         keywords="pool maintenance tips Bali, pool care blog, swimming pool advice, tropical pool maintenance, Bali pool tips"
         canonical="/blog"
       />
+      <JsonLd data={blogSchema} />
       <div className="min-h-screen font-sans bg-background text-foreground overflow-x-hidden selection:bg-primary/30">
         <Navbar />
         
@@ -193,7 +245,7 @@ export default function Blog() {
 
               <div className="bg-slate-50 rounded-3xl overflow-hidden max-w-5xl mx-auto">
                 <div className="grid md:grid-cols-2 gap-0">
-                  <img 
+                  <img loading="lazy" 
                     src={blogPosts[0].image}
                     alt={blogPosts[0].title + " - pool service blog article"}
                     className="w-full h-64 md:h-full object-cover"
@@ -252,7 +304,7 @@ export default function Blog() {
                     key={post.id} 
                     className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow"
                   >
-                    <img 
+                    <img loading="lazy" 
                       src={post.image}
                       alt={post.title + " - pool maintenance article for Bali"}
                       className="w-full h-48 object-cover"

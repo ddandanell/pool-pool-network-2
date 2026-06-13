@@ -2,6 +2,7 @@ import { Navbar } from "@/components/layout/navbar";
 import { Footer } from "@/components/layout/footer";
 import { FAQ } from "@/components/sections/faq";
 import { Helmet } from "@/components/seo/helmet";
+import { JsonLd } from "@/components/seo/json-ld";
 import heroImage from "@assets/generated_images/luxury_bali_villa_pool_hero.png";
 import waterTexture from "@assets/generated_images/crystal_clear_water_texture.png";
 import cleaningImage from "@assets/generated_images/professional_pool_cleaning_service.png";
@@ -54,6 +55,27 @@ const services = [
 ];
 
 export default function Services() {
+  const servicesSchema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Bali Pool Pros - Complete Pool Services in Bali",
+    "description": "Professional pool services in Bali including maintenance, cleaning, repair, and installation for villas, resorts, and residential properties.",
+    "provider": {
+      "@type": "LocalBusiness",
+      "name": "Bali Pool Pros",
+      "url": "https://balipoolcleaning.online",
+      "telephone": "+62 823-2301-1656",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Bali",
+        "addressCountry": "ID"
+      },
+      "areaServed": ["Ubud", "Seminyak", "Canggu", "Uluwatu", "Jimbaran", "Nusa Dua", "Sanur", "Denpasar", "Kerobokan"]
+    },
+    "serviceType": ["Pool Maintenance", "Pool Cleaning", "Pool Repair", "Pool Installation", "Emergency Pool Services", "Pool Equipment Services"],
+    "areaServed": ["Bali", "Indonesia"]
+  };
+
   return (
     <>
       <Helmet 
@@ -62,6 +84,7 @@ export default function Services() {
         keywords="pool services Bali, pool maintenance Bali, pool cleaning Bali, pool repair Bali, swimming pool installation Bali, Bali pool company"
         canonical="/services"
       />
+      <JsonLd data={servicesSchema} />
       <div className="min-h-screen font-sans bg-background text-foreground overflow-x-hidden selection:bg-primary/30">
         <Navbar />
         
@@ -170,7 +193,7 @@ export default function Services() {
                   </div>
                 </div>
                 <div>
-                  <img 
+                  <img loading="lazy" 
                     src={cleaningImage}
                     alt="Expert pool cleaning service in Bali - professional technician maintaining villa pool"
                     className="rounded-2xl shadow-2xl w-full aspect-[4/3] object-cover"

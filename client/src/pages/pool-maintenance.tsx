@@ -2,6 +2,7 @@ import { Navbar } from "@/components/layout/navbar";
 import { Footer } from "@/components/layout/footer";
 import { FAQ } from "@/components/sections/faq";
 import { Helmet } from "@/components/seo/helmet";
+import { JsonLd } from "@/components/seo/json-ld";
 import heroImage from "@assets/generated_images/luxury_bali_villa_pool_hero.png";
 import waterTexture from "@assets/generated_images/crystal_clear_water_texture.png";
 import cleaningImage from "@assets/generated_images/professional_pool_cleaning_service.png";
@@ -61,6 +62,21 @@ const maintenancePackages = [
 ];
 
 export default function PoolMaintenance() {
+  const maintenanceSchema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Pool Maintenance Service in Bali",
+    "description": "Professional weekly and bi-weekly pool maintenance services for villas, resorts, and homes in Bali. Includes chemical balancing, cleaning, equipment inspection, and water testing.",
+    "provider": {
+      "@type": "LocalBusiness",
+      "name": "Bali Pool Pros",
+      "url": "https://balipoolcleaning.online",
+      "telephone": "+62 823-2301-1656"
+    },
+    "serviceType": "Pool Maintenance",
+    "areaServed": ["Ubud", "Seminyak", "Canggu", "Uluwatu", "Jimbaran", "Nusa Dua", "Sanur", "Kerobokan", "Denpasar", "Bali"]
+  };
+
   return (
     <>
       <Helmet 
@@ -69,6 +85,7 @@ export default function PoolMaintenance() {
         keywords="pool maintenance Bali, weekly pool service Bali, pool care Bali, swimming pool maintenance, villa pool maintenance Bali, resort pool service"
         canonical="/pool-maintenance"
       />
+      <JsonLd data={maintenanceSchema} />
       <div className="min-h-screen font-sans bg-background text-foreground overflow-x-hidden selection:bg-primary/30">
         <Navbar />
         
@@ -120,7 +137,7 @@ export default function PoolMaintenance() {
                   </div>
                 </div>
                 <div className="space-y-6">
-                  <img 
+                  <img loading="lazy" 
                     src={cleaningImage}
                     alt="Pool maintenance technician checking water chemistry in Bali villa pool"
                     className="rounded-2xl shadow-2xl w-full aspect-[4/3] object-cover"

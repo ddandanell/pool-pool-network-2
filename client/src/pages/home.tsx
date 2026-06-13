@@ -93,7 +93,7 @@ export default function Home() {
                   </Link>
                 </div>
                 <div className="relative">
-                  <img 
+                  <img loading="lazy" 
                     src={waterTexture}
                     alt="Crystal clear pool water in Bali villa"
                     className="rounded-2xl shadow-2xl w-full aspect-[4/3] object-cover"

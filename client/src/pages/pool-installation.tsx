@@ -2,6 +2,7 @@ import { Navbar } from "@/components/layout/navbar";
 import { Footer } from "@/components/layout/footer";
 import { FAQ } from "@/components/sections/faq";
 import { Helmet } from "@/components/seo/helmet";
+import { JsonLd } from "@/components/seo/json-ld";
 import heroImage from "@assets/generated_images/luxury_bali_villa_pool_hero.png";
 import waterTexture from "@assets/generated_images/crystal_clear_water_texture.png";
 import cleaningImage from "@assets/generated_images/professional_pool_cleaning_service.png";
@@ -87,6 +88,21 @@ const installationProcess = [
 ];
 
 export default function PoolInstallation() {
+  const installationSchema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Swimming Pool Installation and Construction in Bali",
+    "description": "Custom pool design and construction in Bali including infinity pools, plunge pools, lap pools, freeform pools, and resort pools. Professional pool builders with 14+ years experience.",
+    "provider": {
+      "@type": "LocalBusiness",
+      "name": "Bali Pool Pros",
+      "url": "https://balipoolcleaning.online",
+      "telephone": "+62 823-2301-1656"
+    },
+    "serviceType": "Pool Construction",
+    "areaServed": ["Ubud", "Seminyak", "Canggu", "Uluwatu", "Jimbaran", "Nusa Dua", "Sanur", "Denpasar", "Bali"]
+  };
+
   return (
     <>
       <Helmet 
@@ -95,6 +111,7 @@ export default function PoolInstallation() {
         keywords="pool installation Bali, swimming pool construction Bali, pool builder Bali, infinity pool Bali, custom pool design, pool contractors Bali"
         canonical="/pool-installation"
       />
+      <JsonLd data={installationSchema} />
       <div className="min-h-screen font-sans bg-background text-foreground overflow-x-hidden selection:bg-primary/30">
         <Navbar />
         
@@ -153,7 +170,7 @@ export default function PoolInstallation() {
                   </div>
                 </div>
                 <div className="space-y-6">
-                  <img 
+                  <img loading="lazy" 
                     src={cleaningImage}
                     alt="Bali Pool Pros team installing a luxury swimming pool in Bali villa"
                     className="rounded-2xl shadow-2xl w-full aspect-[4/3] object-cover"
@@ -309,7 +326,7 @@ export default function PoolInstallation() {
             <div className="container mx-auto px-6">
               <div className="grid md:grid-cols-2 gap-16 items-center">
                 <div className="order-2 md:order-1">
-                  <img 
+                  <img loading="lazy" 
                     src={heroImage}
                     alt="Infinity pool installation overlooking Bali rice terraces"
                     className="rounded-2xl shadow-2xl w-full aspect-[4/3] object-cover"

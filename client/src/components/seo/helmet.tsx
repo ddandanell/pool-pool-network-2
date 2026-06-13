@@ -8,77 +8,74 @@ interface HelmetProps {
   ogImage?: string;
 }
 
+const SITE_URL = "https://balipoolcleaning.online";
+const DEFAULT_OG_IMAGE = "/attached_assets/generated_images/luxury_bali_villa_pool_hero.png";
+
+/**
+ * Ensure a meta tag exists in <head> and set its content.
+ * Returns the element so callers can set additional attributes.
+ */
+function ensureMetaTag(attr: string, value: string, content: string): HTMLElement {
+  const selector = `meta[${attr}="${value}"]` as const;
+  let el = document.head.querySelector<HTMLMetaElement>(selector);
+  if (!el) {
+    el = document.createElement("meta");
+    el.setAttribute(attr, value);
+    document.head.appendChild(el);
+  }
+  el.setAttribute("content", content);
+  return el;
+}
+
+/**
+ * Ensure a link tag exists in <head> and set its attributes.
+ */
+function ensureLinkTag(rel: string, href: string): void {
+  let el = document.head.querySelector(`link[rel="${rel}"]`);
+  if (!el) {
+    el = document.createElement("link");
+    el.setAttribute("rel", rel);
+    document.head.appendChild(el);
+  }
+  el.setAttribute("href", href);
+}
+
 export function Helmet({ title, description, keywords, canonical, ogImage }: HelmetProps) {
   useEffect(() => {
-    // Update document title
+    // Document title
     document.title = title;
 
-    // Update meta description
-    let metaDescription = document.querySelector('meta[name="description"]');
-    if (metaDescription) {
-      metaDescription.setAttribute("content", description);
-    } else {
-      metaDescription = document.createElement("meta");
-      metaDescription.setAttribute("name", "description");
-      metaDescription.setAttribute("content", description);
-      document.head.appendChild(metaDescription);
-    }
-
-    // Update meta keywords
+    // Standard meta
+    ensureMetaTag("name", "description", description);
     if (keywords) {
-      let metaKeywords = document.querySelector('meta[name="keywords"]');
-      if (metaKeywords) {
-        metaKeywords.setAttribute("content", keywords);
-      } else {
-        metaKeywords = document.createElement("meta");
-        metaKeywords.setAttribute("name", "keywords");
-        metaKeywords.setAttribute("content", keywords);
-        document.head.appendChild(metaKeywords);
-      }
+      ensureMetaTag("name", "keywords", keywords);
     }
 
-    // Update OG tags
-    let ogTitle = document.querySelector('meta[property="og:title"]');
-    if (ogTitle) {
-      ogTitle.setAttribute("content", title);
-    }
+    // Open Graph
+    ensureMetaTag("property", "og:title", title);
+    ensureMetaTag("property", "og:description", description);
+    ensureMetaTag("property", "og:type", "website");
+    ensureMetaTag("property", "og:site_name", "Bali Pool Pros");
+    ensureMetaTag("property", "og:locale", "en_US");
 
-    let ogDesc = document.querySelector('meta[property="og:description"]');
-    if (ogDesc) {
-      ogDesc.setAttribute("content", description);
-    }
+    // OG URL
+    const urlPath = canonical || "/";
+    const fullUrl = urlPath.startsWith("http") ? urlPath : `${SITE_URL}${urlPath}`;
+    ensureMetaTag("property", "og:url", fullUrl);
 
-    if (ogImage) {
-      let ogImg = document.querySelector('meta[property="og:image"]');
-      if (ogImg) {
-        ogImg.setAttribute("content", ogImage);
-      }
-    }
+    // OG Image
+    const img = ogImage || DEFAULT_OG_IMAGE;
+    const fullImg = img.startsWith("http") ? img : `${SITE_URL}${img}`;
+    ensureMetaTag("property", "og:image", fullImg);
 
-    // Update Twitter tags
-    let twitterTitle = document.querySelector('meta[name="twitter:title"]');
-    if (twitterTitle) {
-      twitterTitle.setAttribute("content", title);
-    }
+    // Twitter Card
+    ensureMetaTag("name", "twitter:card", "summary_large_image");
+    ensureMetaTag("name", "twitter:title", title);
+    ensureMetaTag("name", "twitter:description", description);
+    ensureMetaTag("name", "twitter:image", fullImg);
 
-    let twitterDesc = document.querySelector('meta[name="twitter:description"]');
-    if (twitterDesc) {
-      twitterDesc.setAttribute("content", description);
-    }
-
-    // Update canonical
-    if (canonical) {
-      let canonicalLink = document.querySelector('link[rel="canonical"]');
-      const fullCanonical = canonical.startsWith("http") ? canonical : `https://poolcleaningbali.online${canonical}`;
-      if (canonicalLink) {
-        canonicalLink.setAttribute("href", fullCanonical);
-      } else {
-        canonicalLink = document.createElement("link");
-        canonicalLink.setAttribute("rel", "canonical");
-        canonicalLink.setAttribute("href", fullCanonical);
-        document.head.appendChild(canonicalLink);
-      }
-    }
+    // Canonical
+    ensureLinkTag("canonical", fullUrl);
   }, [title, description, keywords, canonical, ogImage]);
 
   return null;

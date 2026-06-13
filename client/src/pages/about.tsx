@@ -2,6 +2,7 @@ import { Navbar } from "@/components/layout/navbar";
 import { Footer } from "@/components/layout/footer";
 import { FAQ } from "@/components/sections/faq";
 import { Helmet } from "@/components/seo/helmet";
+import { JsonLd } from "@/components/seo/json-ld";
 import heroImage from "@assets/generated_images/luxury_bali_villa_pool_hero.png";
 import waterTexture from "@assets/generated_images/crystal_clear_water_texture.png";
 import cleaningImage from "@assets/generated_images/professional_pool_cleaning_service.png";
@@ -58,6 +59,36 @@ const milestones = [
 ];
 
 export default function About() {
+  const aboutSchema = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Bali Pool Pros",
+    "description": "Bali's leading pool service company since 2010. We provide professional pool maintenance, cleaning, repair, and installation services throughout Bali.",
+    "url": "https://balipoolcleaning.online/about",
+    "logo": "https://balipoolcleaning.online/attached_assets/generated_images/luxury_bali_villa_pool_hero.png",
+    "foundingDate": "2010",
+    "numberOfEmployees": "25+",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Jl. Raya Ubud No. 45",
+      "addressLocality": "Gianyar",
+      "addressRegion": "Bali",
+      "postalCode": "80571",
+      "addressCountry": "ID"
+    },
+    "telephone": "+62 823-2301-1656",
+    "email": "info@balipoolservice.com",
+    "foundingLocation": {
+      "@type": "Place",
+      "name": "Ubud, Bali"
+    },
+    "areaServed": ["Bali", "Indonesia"],
+    "sameAs": [
+      "https://www.facebook.com/balipoolpros",
+      "https://www.instagram.com/balipoolpros"
+    ]
+  };
+
   return (
     <>
       <Helmet 
@@ -66,6 +97,7 @@ export default function About() {
         keywords="about Bali Pool Pros, pool service company Bali, pool experts Bali, pool maintenance team, Bali pool professionals"
         canonical="/about"
       />
+      <JsonLd data={aboutSchema} />
       <div className="min-h-screen font-sans bg-background text-foreground overflow-x-hidden selection:bg-primary/30">
         <Navbar />
         
@@ -120,7 +152,7 @@ export default function About() {
                   </div>
                 </div>
                 <div className="space-y-6">
-                  <img 
+                  <img loading="lazy" 
                     src={cleaningImage}
                     alt="Professional pool cleaning service in Bali by Bali Pool Pros technician"
                     className="rounded-2xl shadow-2xl w-full aspect-[4/3] object-cover"
@@ -238,7 +270,7 @@ export default function About() {
               <div className="grid md:grid-cols-3 gap-8">
                 {teamMembers.map((member, index) => (
                   <div key={index} className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow">
-                    <img 
+                    <img loading="lazy" 
                       src={member.image}
                       alt={`${member.name} - ${member.role} at Bali Pool Pros pool service company`}
                       className="w-full h-64 object-cover"
